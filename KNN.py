@@ -22,7 +22,7 @@ y_pred = knn.predict(X_test)
 
 #Task 2
 
-%pip install -q datasets
+# pip install -q datasets(download datasets)
 import numpy as np 
 from datasets import load_dataset
 from sklearn.neighbors import KNeighborsClassifier
