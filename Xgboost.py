@@ -23,7 +23,7 @@ encoded_categorical_df = pd.DataFrame(encoded_categorical_cols, columns=categori
 
 numerical_df = data_df.drop(columns=categorical_cols, axis = 1)
 encoded_df = pd.concat([numerical_df, encoded_categorical_df], axis=1)
-encoded_df
+
 
 X = encoded_df.drop(columns= ['area'])
 y = encoded_df['area']
@@ -46,7 +46,7 @@ print(f'Mean Absolute Error: {mae}')
 print(f'Mean Squared Error: {mse}')
 
 data_df = pd.read_csv('Problem4.csv')
-data_df
+
 
 xg_class = xgb.XGBClassifier(seed=7)
 xg_class.fit(X_train, y_train)
