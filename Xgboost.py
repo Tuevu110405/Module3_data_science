@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 dataset_path = 'Problem3.csv'
 data_df = pd.read_csv(dataset_path, sep=',')
-data_df
+
 
 categorical_cols = data_df.select_dtypes(include=['object','bool']).columns.to_list()
 
